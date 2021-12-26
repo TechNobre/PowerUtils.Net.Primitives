@@ -40,12 +40,11 @@ namespace PowerUtils.Net.Constants
         /// <summary>
         /// Get documentation link by status code
         /// </summary>
-        /// <param name="statuCode"></param>
+        /// <param name="statuCode">Http statu code</param>
         /// <exception cref="ArgumentException">The <paramref name="statuCode">info</paramref> parameter does not exist.</exception>
         /// <returns>Documentation link</returns>
         public static string GetStatusCodeLink(this int statuCode)
-        {
-            return statuCode switch
+            => statuCode switch
             {
                 // 4XX
                 400 => BAD_REQUEST,
@@ -78,21 +77,18 @@ namespace PowerUtils.Net.Constants
 
                 _ => throw new ArgumentException($"Unknown status code: '{statuCode}'"),
             };
-        }
 
         /// <summary>
         /// Get documentation link by status code
         /// </summary>
-        /// <param name="statuCode"></param>
+        /// <param name="statuCode">Http statu code</param>
         /// <exception cref="ArgumentException">The <paramref name="statuCode">info</paramref> parameter does not exist.</exception>
         /// <returns>Documentation link</returns>
         public static string GetStatusCodeLink(this int? statuCode)
-        {
-            return statuCode switch
+            => statuCode switch
             {
                 null => STATUS_CODES,
                 _ => statuCode.Value.GetStatusCodeLink(),
             };
-        }
     }
 }

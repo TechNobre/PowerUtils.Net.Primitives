@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <!-- Assembly and projecto details -->
@@ -24,7 +24,7 @@
 
     <Description>Provides additional types and constants for network-based libraries.</Description>
     <PackageReleaseNotes>
-      - Kick start project
+      - Updated documentation;
     </PackageReleaseNotes>
     <Description>Provides additional types and constants for network-based libraries.</Description>
     <PackageTags>PowerUtils;Utils;Net;Primitives;Types;Constants;Web</PackageTags>

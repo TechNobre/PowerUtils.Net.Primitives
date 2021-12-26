@@ -100,5 +100,11 @@ dotnet add package PowerUtils.Net.Primitives
 ## Release Notes
 
 
+### v1.0.1 - ???
+
+#### Enhancements
+- Updated documentation;
+
+
 ### v1.0.0 - 2021/11/21
 - Kick start project
