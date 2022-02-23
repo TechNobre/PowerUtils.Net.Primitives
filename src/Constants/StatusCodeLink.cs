@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace PowerUtils.Net.Constants
-{ // DONE
+{
     // Reference: https://github.com/ofpinewood/http-exceptions/blob/main/src/Opw.HttpExceptions/ResponseStatusCodeLink.cs
 
     /// <summary>
@@ -29,6 +29,7 @@ namespace PowerUtils.Net.Constants
         public const string UNSUPPORTED_MEDIA_TYPE = "https://tools.ietf.org/html/rfc7231#section-6.5.13";
         public const string REQUESTED_RANGE_NOT_SATISFIABLE = "https://tools.ietf.org/html/rfc7233#section-4.4";
         public const string EXPECTATION_FAILED = "https://tools.ietf.org/html/rfc7231#section-6.5.14";
+        public const string UNPROCESSABLE_ENTITY = "https://tools.ietf.org/doc/html/rfc7231#section-6.5";
         public const string UPGRADE_REQUIRED = "https://tools.ietf.org/html/rfc7231#section-6.5.15";
         public const string INTERNAL_SERVER_ERROR = "https://tools.ietf.org/html/rfc7231#section-6.6.1";
         public const string NOT_IMPLEMENTED = "https://tools.ietf.org/html/rfc7231#section-6.6.2";
@@ -65,6 +66,7 @@ namespace PowerUtils.Net.Constants
                 415 => UNSUPPORTED_MEDIA_TYPE,
                 416 => REQUESTED_RANGE_NOT_SATISFIABLE,
                 417 => EXPECTATION_FAILED,
+                422 => UNPROCESSABLE_ENTITY,
                 426 => UPGRADE_REQUIRED,
 
                 // 5XX

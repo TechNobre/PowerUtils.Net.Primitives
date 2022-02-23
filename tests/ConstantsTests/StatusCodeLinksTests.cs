@@ -27,6 +27,7 @@ public class StatusCodeLinksTests
     [InlineData(415, StatusCodeLink.UNSUPPORTED_MEDIA_TYPE)]
     [InlineData(416, StatusCodeLink.REQUESTED_RANGE_NOT_SATISFIABLE)]
     [InlineData(417, StatusCodeLink.EXPECTATION_FAILED)]
+    [InlineData(422, StatusCodeLink.UNPROCESSABLE_ENTITY)]
     [InlineData(426, StatusCodeLink.UPGRADE_REQUIRED)]
     [InlineData(500, StatusCodeLink.INTERNAL_SERVER_ERROR)]
     [InlineData(501, StatusCodeLink.NOT_IMPLEMENTED)]
