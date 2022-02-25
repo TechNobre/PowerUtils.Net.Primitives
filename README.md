@@ -1,7 +1,10 @@
 # PowerUtils.Net.Primitives
 Provides additional types and constants for network-based libraries.
 
-![CI](https://github.com/TechNobre/PowerUtils.Net.Primitives/actions/workflows/main.yml/badge.svg)
+![Tests](https://github.com/TechNobre/PowerUtils.Net.Primitives/actions/workflows/test-project.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.Net.Primitives&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.Net.Primitives)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.Net.Primitives&metric=coverage)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.Net.Primitives)
+
 [![NuGet](https://img.shields.io/nuget/v/PowerUtils.Net.Primitives.svg)](https://www.nuget.org/packages/PowerUtils.Net.Primitives)
 [![Nuget](https://img.shields.io/nuget/dt/PowerUtils.Net.Primitives.svg)](https://www.nuget.org/packages/PowerUtils.Net.Primitives)
 [![License: MIT](https://img.shields.io/github/license/ofpinewood/http-exceptions.svg)](https://github.com/TechNobre/PowerUtils.Net.Primitives/blob/main/LICENSE)
@@ -69,6 +72,7 @@ dotnet add package PowerUtils.Net.Primitives
   - `StatusCodeLink.UNSUPPORTED_MEDIA_TYPE`;
   - `StatusCodeLink.REQUESTED_RANGE_NOT_SATISFIABLE`;
   - `StatusCodeLink.EXPECTATION_FAILED`;
+  - `StatusCodeLink.UNPROCESSABLE_ENTITY`;
   - `StatusCodeLink.UPGRADE_REQUIRED`;
   - `StatusCodeLink.INTERNAL_SERVER_ERROR`;
   - `StatusCodeLink.NOT_IMPLEMENTED`;
@@ -97,14 +101,6 @@ dotnet add package PowerUtils.Net.Primitives
 
 
 
-## Release Notes
+## Changelog
 
-
-### v1.0.1 - ???
-
-#### Enhancements
-- Updated documentation;
-
-
-### v1.0.0 - 2021/11/21
-- Kick start project
+[Here](./CHANGELOG.md)

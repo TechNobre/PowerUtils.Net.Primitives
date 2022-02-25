@@ -13,18 +13,18 @@
     <PackageId>PowerUtils.Net.Primitives</PackageId>
     <title>PowerUtils.Net.Primitives</title>
     <Product>PowerUtils.Net.Primitives</Product>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>TechNobre</Company>
 
     <License>MIT</License>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Copyright>Copyright © 2021 by TechNobre</Copyright>
+    <Copyright>Copyright © 2022 by TechNobre</Copyright>
 
     <Description>Provides additional types and constants for network-based libraries.</Description>
     <PackageReleaseNotes>
-      - Updated documentation;
+      - Added constant for Status Code UNPROCESSABLE ENTITY 422
     </PackageReleaseNotes>
     <Description>Provides additional types and constants for network-based libraries.</Description>
     <PackageTags>PowerUtils;Utils;Net;Primitives;Types;Constants;Web</PackageTags>

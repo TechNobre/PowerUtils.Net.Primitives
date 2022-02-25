@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using System;
+using FluentAssertions;
 using PowerUtils.Net.Constants;
 using Xunit;
 
@@ -42,5 +43,15 @@ public class StatusCodeLinksTests
 
         // Assert
         act.Should().Be(statusCodeLink);
+    }
+
+    [Fact(DisplayName = "Http status codes invalid - Should return an exception")]
+    public void GetStatusCodeLink_InvalidStatusCode_ReturnLinks()
+    {
+        // Arrange & Act
+        var act = () => 666.GetStatusCodeLink();
+
+        // Assert
+        act.Should().Throw<ArgumentException>();
     }
 }

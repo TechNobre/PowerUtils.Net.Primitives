@@ -3,19 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{BECA00C2-6FEE-416B-BF8A-DFBFC067ED21}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.project", "1.project", "{BECA00C2-6FEE-416B-BF8A-DFBFC067ED21}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		CHANGELOG.md = CHANGELOG.md
 		global.json = global.json
 		LICENSE = LICENSE
-		.github\workflows\main.yml = .github\workflows\main.yml
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.PowerUtils.Net.Primitives", "src\1.PowerUtils.Net.Primitives.csproj", "{A3649905-3DE7-4BBA-BC5D-1D62089C7FFD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.PowerUtils.Net.Primitives.Tests", "tests\2.PowerUtils.Net.Primitives.Tests.csproj", "{EACB7A09-1067-4312-B8D1-1D29897BA8D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.PowerUtils.Net.Primitives.Tests", "tests\PowerUtils.Net.Primitives.Tests\2.PowerUtils.Net.Primitives.Tests.csproj", "{EACB7A09-1067-4312-B8D1-1D29897BA8D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.cicd", "2.cicd", "{2ED72909-1EFA-41DE-9E9A-BD15DB2A396B}"
+	ProjectSection(SolutionItems) = preProject
+		dependabot.yml = dependabot.yml
+		publish-nuget.yml = publish-nuget.yml
+		sonarcloud.yml = sonarcloud.yml
+		test-project.yml = test-project.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.src", "3.src", "{6F5B2D55-69F7-43F7-8BA8-97BB4D79276D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.tests", "4.tests", "{3B90E664-51A0-4997-B2F3-58E2931E3B03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +46,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3649905-3DE7-4BBA-BC5D-1D62089C7FFD} = {6F5B2D55-69F7-43F7-8BA8-97BB4D79276D}
+		{EACB7A09-1067-4312-B8D1-1D29897BA8D4} = {3B90E664-51A0-4997-B2F3-58E2931E3B03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A48BE987-BAA5-4255-862F-32B60FD428A9}
