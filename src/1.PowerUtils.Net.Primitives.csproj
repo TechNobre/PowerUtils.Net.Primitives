@@ -13,7 +13,7 @@
     <PackageId>PowerUtils.Net.Primitives</PackageId>
     <title>PowerUtils.Net.Primitives</title>
     <Product>PowerUtils.Net.Primitives</Product>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>TechNobre</Company>
@@ -24,7 +24,7 @@
 
     <Description>Provides additional types and constants for network-based libraries.</Description>
     <PackageReleaseNotes>
-      - Added constant for Status Code UNPROCESSABLE ENTITY 422
+      Fixed link for status code UNPROCESSABLE_ENTITY  422
     </PackageReleaseNotes>
     <Description>Provides additional types and constants for network-based libraries.</Description>
     <PackageTags>PowerUtils;Utils;Net;Primitives;Types;Constants;Web</PackageTags>
