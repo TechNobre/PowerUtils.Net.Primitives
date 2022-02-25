@@ -31,7 +31,7 @@ namespace PowerUtils.Net.Constants
         public const string UNSUPPORTED_MEDIA_TYPE = BASE_URL + "html/rfc7231#section-6.5.13";
         public const string REQUESTED_RANGE_NOT_SATISFIABLE = BASE_URL + "html/rfc7233#section-4.4";
         public const string EXPECTATION_FAILED = BASE_URL + "html/rfc7231#section-6.5.14";
-        public const string UNPROCESSABLE_ENTITY = BASE_URL + "doc/html/rfc7231#section-6.5";
+        public const string UNPROCESSABLE_ENTITY = BASE_URL + "html/rfc4918#section-11.2";
         public const string UPGRADE_REQUIRED = BASE_URL + "html/rfc7231#section-6.5.15";
         public const string INTERNAL_SERVER_ERROR = BASE_URL + "html/rfc7231#section-6.6.1";
         public const string NOT_IMPLEMENTED = BASE_URL + "html/rfc7231#section-6.6.2";
