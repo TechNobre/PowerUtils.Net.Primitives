@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace PowerUtils.Net.Constants
-{ // DONE
+{
     // Reference: https://github.com/ofpinewood/http-exceptions/blob/main/src/Opw.HttpExceptions/ResponseStatusCodeLink.cs
 
     /// <summary>
@@ -9,43 +9,45 @@ namespace PowerUtils.Net.Constants
     /// </summary>
     public static class StatusCodeLink
     {
-        public const string STATUS_CODES = "https://tools.ietf.org/html/rfc7231#section-6";
+        private const string BASE_URL = "https://tools.ietf.org/";
 
-        public const string BAD_REQUEST = "https://tools.ietf.org/html/rfc7231#section-6.5.1";
-        public const string UNAUTHORIZED = "https://tools.ietf.org/html/rfc7235#section-3.1";
-        public const string PAYMENT_REQUIRED = "https://tools.ietf.org/html/rfc7231#section-6.5.2";
-        public const string FORBIDDEN = "https://tools.ietf.org/html/rfc7231#section-6.5.3";
-        public const string NOT_FOUND = "https://tools.ietf.org/html/rfc7231#section-6.5.4";
-        public const string METHOD_NOT_ALLOWED = "https://tools.ietf.org/html/rfc7231#section-6.5.5";
-        public const string NOT_ACCEPTABLE = "https://tools.ietf.org/html/rfc7231#section-6.5.6";
-        public const string PROXY_AUTHENTICATION_REQUIRED = "https://tools.ietf.org/html/rfc7235#section-3.2";
-        public const string REQUEST_TIMEOUT = "https://tools.ietf.org/html/rfc7231#section-6.5.7";
-        public const string CONFLICT = "https://tools.ietf.org/html/rfc7231#section-6.5.8";
-        public const string GONE = "https://tools.ietf.org/html/rfc7231#section-6.5.9";
-        public const string LENGTH_REQUIRED = "https://tools.ietf.org/html/rfc7231#section-6.5.10";
-        public const string PRECONDITION_FAILED = "https://tools.ietf.org/html/rfc7232#section-4.2";
-        public const string REQUEST_ENTITY_TOO_LARGE = "https://tools.ietf.org/html/rfc7231#section-6.5.11";
-        public const string REQUEST_URI_TOO_LONG = "https://tools.ietf.org/html/rfc7231#section-6.5.12";
-        public const string UNSUPPORTED_MEDIA_TYPE = "https://tools.ietf.org/html/rfc7231#section-6.5.13";
-        public const string REQUESTED_RANGE_NOT_SATISFIABLE = "https://tools.ietf.org/html/rfc7233#section-4.4";
-        public const string EXPECTATION_FAILED = "https://tools.ietf.org/html/rfc7231#section-6.5.14";
-        public const string UPGRADE_REQUIRED = "https://tools.ietf.org/html/rfc7231#section-6.5.15";
-        public const string INTERNAL_SERVER_ERROR = "https://tools.ietf.org/html/rfc7231#section-6.6.1";
-        public const string NOT_IMPLEMENTED = "https://tools.ietf.org/html/rfc7231#section-6.6.2";
-        public const string BAD_GATEWAY = "https://tools.ietf.org/html/rfc7231#section-6.6.3";
-        public const string SERVICE_UNAVAILABLE = "https://tools.ietf.org/html/rfc7231#section-6.6.4";
-        public const string GATEWAY_TIMEOUT = "https://tools.ietf.org/html/rfc7231#section-6.6.5";
-        public const string HTTP_VERSION_NOT_SUPPORTED = "https://tools.ietf.org/html/rfc7231#section-6.6.6";
+        public const string STATUS_CODES = BASE_URL + "html/rfc7231#section-6";
+
+        public const string BAD_REQUEST = BASE_URL + "html/rfc7231#section-6.5.1";
+        public const string UNAUTHORIZED = BASE_URL + "html/rfc7235#section-3.1";
+        public const string PAYMENT_REQUIRED = BASE_URL + "html/rfc7231#section-6.5.2";
+        public const string FORBIDDEN = BASE_URL + "html/rfc7231#section-6.5.3";
+        public const string NOT_FOUND = BASE_URL + "html/rfc7231#section-6.5.4";
+        public const string METHOD_NOT_ALLOWED = BASE_URL + "html/rfc7231#section-6.5.5";
+        public const string NOT_ACCEPTABLE = BASE_URL + "html/rfc7231#section-6.5.6";
+        public const string PROXY_AUTHENTICATION_REQUIRED = BASE_URL + "html/rfc7235#section-3.2";
+        public const string REQUEST_TIMEOUT = BASE_URL + "html/rfc7231#section-6.5.7";
+        public const string CONFLICT = BASE_URL + "html/rfc7231#section-6.5.8";
+        public const string GONE = BASE_URL + "html/rfc7231#section-6.5.9";
+        public const string LENGTH_REQUIRED = BASE_URL + "html/rfc7231#section-6.5.10";
+        public const string PRECONDITION_FAILED = BASE_URL + "html/rfc7232#section-4.2";
+        public const string REQUEST_ENTITY_TOO_LARGE = BASE_URL + "html/rfc7231#section-6.5.11";
+        public const string REQUEST_URI_TOO_LONG = BASE_URL + "html/rfc7231#section-6.5.12";
+        public const string UNSUPPORTED_MEDIA_TYPE = BASE_URL + "html/rfc7231#section-6.5.13";
+        public const string REQUESTED_RANGE_NOT_SATISFIABLE = BASE_URL + "html/rfc7233#section-4.4";
+        public const string EXPECTATION_FAILED = BASE_URL + "html/rfc7231#section-6.5.14";
+        public const string UNPROCESSABLE_ENTITY = BASE_URL + "doc/html/rfc7231#section-6.5";
+        public const string UPGRADE_REQUIRED = BASE_URL + "html/rfc7231#section-6.5.15";
+        public const string INTERNAL_SERVER_ERROR = BASE_URL + "html/rfc7231#section-6.6.1";
+        public const string NOT_IMPLEMENTED = BASE_URL + "html/rfc7231#section-6.6.2";
+        public const string BAD_GATEWAY = BASE_URL + "html/rfc7231#section-6.6.3";
+        public const string SERVICE_UNAVAILABLE = BASE_URL + "html/rfc7231#section-6.6.4";
+        public const string GATEWAY_TIMEOUT = BASE_URL + "html/rfc7231#section-6.6.5";
+        public const string HTTP_VERSION_NOT_SUPPORTED = BASE_URL + "html/rfc7231#section-6.6.6";
 
         /// <summary>
         /// Get documentation link by status code
         /// </summary>
-        /// <param name="statuCode"></param>
+        /// <param name="statuCode">Http statu code</param>
         /// <exception cref="ArgumentException">The <paramref name="statuCode">info</paramref> parameter does not exist.</exception>
         /// <returns>Documentation link</returns>
         public static string GetStatusCodeLink(this int statuCode)
-        {
-            return statuCode switch
+            => statuCode switch
             {
                 // 4XX
                 400 => BAD_REQUEST,
@@ -66,6 +68,7 @@ namespace PowerUtils.Net.Constants
                 415 => UNSUPPORTED_MEDIA_TYPE,
                 416 => REQUESTED_RANGE_NOT_SATISFIABLE,
                 417 => EXPECTATION_FAILED,
+                422 => UNPROCESSABLE_ENTITY,
                 426 => UPGRADE_REQUIRED,
 
                 // 5XX
@@ -78,21 +81,18 @@ namespace PowerUtils.Net.Constants
 
                 _ => throw new ArgumentException($"Unknown status code: '{statuCode}'"),
             };
-        }
 
         /// <summary>
         /// Get documentation link by status code
         /// </summary>
-        /// <param name="statuCode"></param>
+        /// <param name="statuCode">Http statu code</param>
         /// <exception cref="ArgumentException">The <paramref name="statuCode">info</paramref> parameter does not exist.</exception>
         /// <returns>Documentation link</returns>
         public static string GetStatusCodeLink(this int? statuCode)
-        {
-            return statuCode switch
+            => statuCode switch
             {
                 null => STATUS_CODES,
                 _ => statuCode.Value.GetStatusCodeLink(),
             };
-        }
     }
 }
