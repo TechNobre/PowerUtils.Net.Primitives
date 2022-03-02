@@ -28,30 +28,67 @@ public class StatusCodeLinksTests
     [InlineData(415, StatusCodeLink.UNSUPPORTED_MEDIA_TYPE)]
     [InlineData(416, StatusCodeLink.REQUESTED_RANGE_NOT_SATISFIABLE)]
     [InlineData(417, StatusCodeLink.EXPECTATION_FAILED)]
+    [InlineData(418, StatusCodeLink.I_AM_A_TEAPOT)]
     [InlineData(422, StatusCodeLink.UNPROCESSABLE_ENTITY)]
+    [InlineData(425, StatusCodeLink.TOO_EARLY)]
     [InlineData(426, StatusCodeLink.UPGRADE_REQUIRED)]
+    [InlineData(428, StatusCodeLink.PRECONDITION_REQUIRED)]
+    [InlineData(429, StatusCodeLink.TOO_MANY_REQUESTS)]
+    [InlineData(431, StatusCodeLink.REQUEST_HEADER_FIELDS_TOO_LARGE)]
+    [InlineData(451, StatusCodeLink.UNAVAILABLE_FOR_LEGAL_REASONS)]
     [InlineData(500, StatusCodeLink.INTERNAL_SERVER_ERROR)]
     [InlineData(501, StatusCodeLink.NOT_IMPLEMENTED)]
     [InlineData(502, StatusCodeLink.BAD_GATEWAY)]
     [InlineData(503, StatusCodeLink.SERVICE_UNAVAILABLE)]
     [InlineData(504, StatusCodeLink.GATEWAY_TIMEOUT)]
     [InlineData(505, StatusCodeLink.HTTP_VERSION_NOT_SUPPORTED)]
+    [InlineData(506, StatusCodeLink.VARIANT_ALSO_NEGOTIATES)]
+    [InlineData(507, StatusCodeLink.INSUFFICIENT_STORAGE)]
+    [InlineData(508, StatusCodeLink.LOOP_DETECTED)]
+    [InlineData(510, StatusCodeLink.NOT_EXTENDED)]
+    [InlineData(511, StatusCodeLink.NETWORK_AUTHENTICATION_REQUIRED)]
     public void GetStatusCodeLink_StatusCodes_ReturnLinks(int? statusCode, string statusCodeLink)
     {
         // Arrange & Act
         var act = statusCode.GetStatusCodeLink();
 
         // Assert
-        act.Should().Be(statusCodeLink);
+        act.Should()
+            .Be(statusCodeLink);
     }
 
-    [Fact(DisplayName = "Http status codes invalid - Should return an exception")]
+    [Fact(DisplayName = "Http status codes non-existent - Should return an exception")]
     public void GetStatusCodeLink_InvalidStatusCode_ReturnLinks()
     {
         // Arrange & Act
         var act = () => 666.GetStatusCodeLink();
 
         // Assert
-        act.Should().Throw<ArgumentException>();
+        act.Should()
+            .Throw<ArgumentException>();
+    }
+
+    [Fact(DisplayName = "Http status codes non-existent - Should return null")]
+    public void GetStatusCodeLinkOrDefault_NonExistent_Null()
+    {
+        // Arrange & Act
+        var act = 666.GetStatusCodeLinkOrDefault();
+
+
+        // Assert
+        act.Should()
+            .BeNull();
+    }
+
+    [Fact(DisplayName = "Http status codes existent - Should return the link")]
+    public void GetStatusCodeLinkOrDefault_Existent_Link()
+    {
+        // Arrange & Act
+        var act = 510.GetStatusCodeLinkOrDefault();
+
+
+        // Assert
+        act.Should()
+            .NotBeNull();
     }
 }

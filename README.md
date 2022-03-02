@@ -72,18 +72,30 @@ dotnet add package PowerUtils.Net.Primitives
   - `StatusCodeLink.UNSUPPORTED_MEDIA_TYPE`;
   - `StatusCodeLink.REQUESTED_RANGE_NOT_SATISFIABLE`;
   - `StatusCodeLink.EXPECTATION_FAILED`;
+  - `StatusCodeLink.I_AM_A_TEAPOT`;
   - `StatusCodeLink.UNPROCESSABLE_ENTITY`;
+  - `StatusCodeLink.TOO_EARLY`;
   - `StatusCodeLink.UPGRADE_REQUIRED`;
+  - `StatusCodeLink.PRECONDITION_REQUIRED`;
+  - `StatusCodeLink.TOO_MANY_REQUESTS`;
+  - `StatusCodeLink.REQUEST_HEADER_FIELDS_TOO_LARGE`;
+  - `StatusCodeLink.UNAVAILABLE_FOR_LEGAL_REASONS`;
   - `StatusCodeLink.INTERNAL_SERVER_ERROR`;
   - `StatusCodeLink.NOT_IMPLEMENTED`;
   - `StatusCodeLink.BAD_GATEWAY`;
   - `StatusCodeLink.SERVICE_UNAVAILABLE`;
   - `StatusCodeLink.GATEWAY_TIMEOUT`;
   - `StatusCodeLink.HTTP_VERSION_NOT_SUPPORTED`;
+  - `StatusCodeLink.VARIANT_ALSO_NEGOTIATES`;
+  - `StatusCodeLink.INSUFFICIENT_STORAGE`;
+  - `StatusCodeLink.LOOP_DETECTED`;
+  - `StatusCodeLink.NOT_EXTENDED`;
+  - `StatusCodeLink.NETWORK_AUTHENTICATION_REQUIRED`;
 
 - **Methods:**
   - `StatusCodeLink.GetStatusCodeLink(this int statuCode)`: Get documentation link by status code;
   - `StatusCodeLink.GetStatusCodeLink(this int? statuCode)`: Get documentation link by status code;
+  - `StatusCodeLink.GetStatusCodeLinkOrDefault(this int statuCode)`: Get documentation link by status code;
 
 
 
