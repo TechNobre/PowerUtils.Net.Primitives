@@ -7,7 +7,7 @@ Provides additional types and constants for network-based libraries.
 
 [![NuGet](https://img.shields.io/nuget/v/PowerUtils.Net.Primitives.svg)](https://www.nuget.org/packages/PowerUtils.Net.Primitives)
 [![Nuget](https://img.shields.io/nuget/dt/PowerUtils.Net.Primitives.svg)](https://www.nuget.org/packages/PowerUtils.Net.Primitives)
-[![License: MIT](https://img.shields.io/github/license/ofpinewood/http-exceptions.svg)](https://github.com/TechNobre/PowerUtils.Net.Primitives/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.Net.Primitives.svg)](https://github.com/TechNobre/PowerUtils.Net.Primitives/blob/main/LICENSE)
 
 
 
