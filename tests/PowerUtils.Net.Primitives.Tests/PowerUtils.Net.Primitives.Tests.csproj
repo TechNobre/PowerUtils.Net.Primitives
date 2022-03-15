@@ -39,7 +39,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\1.PowerUtils.Net.Primitives.csproj" />
+    <ProjectReference Include="..\..\src\PowerUtils.Net.Primitives.csproj" />
   </ItemGroup>
 
 
