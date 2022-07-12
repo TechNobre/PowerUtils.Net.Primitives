@@ -13,9 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.project", "1.project", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.PowerUtils.Net.Primitives", "src\1.PowerUtils.Net.Primitives.csproj", "{A3649905-3DE7-4BBA-BC5D-1D62089C7FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.Net.Primitives", "src\PowerUtils.Net.Primitives.csproj", "{A3649905-3DE7-4BBA-BC5D-1D62089C7FFD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.PowerUtils.Net.Primitives.Tests", "tests\PowerUtils.Net.Primitives.Tests\2.PowerUtils.Net.Primitives.Tests.csproj", "{EACB7A09-1067-4312-B8D1-1D29897BA8D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.Net.Primitives.Tests", "tests\PowerUtils.Net.Primitives.Tests\PowerUtils.Net.Primitives.Tests.csproj", "{EACB7A09-1067-4312-B8D1-1D29897BA8D4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.cicd", "2.cicd", "{2ED72909-1EFA-41DE-9E9A-BD15DB2A396B}"
 	ProjectSection(SolutionItems) = preProject
