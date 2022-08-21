@@ -40,6 +40,7 @@
     <NeutralLanguage>en-GB</NeutralLanguage>
 
     <PackageIcon>logo_128x128.png</PackageIcon>
+    <PackageReadmeFile>README.nuget.org.md</PackageReadmeFile>
 
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/TechNobre/PowerUtils.Net.Primitives</RepositoryUrl>
