@@ -3,7 +3,7 @@
   <!-- Assembly details -->
   <PropertyGroup>
     <ProjectGuid>e6177b22-b10a-4481-bf48-5daaf33a1611</ProjectGuid>
-    
+
     <!-- Assembly and projecto details -->
     <!-- https://docs.microsoft.com/en-us/dotnet/standard/frameworks -->
     <TargetFrameworks>net6.0;net5.0;netcoreapp3.1</TargetFrameworks>
