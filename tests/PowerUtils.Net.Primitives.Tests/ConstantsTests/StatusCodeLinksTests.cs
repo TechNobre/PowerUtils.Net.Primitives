@@ -3,12 +3,11 @@ using FluentAssertions;
 using PowerUtils.Net.Constants;
 using Xunit;
 
-namespace PowerUtils.RestAPI.Tests.ProblemDetails;
+namespace PowerUtils.Net.Primitives.Tests.ConstantsTests;
 
-[Trait("Category", "Contains")]
 public class StatusCodeLinksTests
 {
-    [Theory(DisplayName = "Http status codes - Should return the links")]
+    [Theory]
     [InlineData(null, StatusCodeLink.STATUS_CODES)]
     [InlineData(400, StatusCodeLink.BAD_REQUEST)]
     [InlineData(401, StatusCodeLink.UNAUTHORIZED)]
@@ -47,7 +46,7 @@ public class StatusCodeLinksTests
     [InlineData(508, StatusCodeLink.LOOP_DETECTED)]
     [InlineData(510, StatusCodeLink.NOT_EXTENDED)]
     [InlineData(511, StatusCodeLink.NETWORK_AUTHENTICATION_REQUIRED)]
-    public void GetStatusCodeLink_StatusCodes_ReturnLinks(int? statusCode, string statusCodeLink)
+    public void StatusCodes_GetStatusCodeLink_Link(int? statusCode, string statusCodeLink)
     {
         // Arrange & Act
         var act = statusCode.GetStatusCodeLink();
@@ -57,8 +56,8 @@ public class StatusCodeLinksTests
             .Be(statusCodeLink);
     }
 
-    [Fact(DisplayName = "Http status codes non-existent - Should return an exception")]
-    public void GetStatusCodeLink_InvalidStatusCode_ReturnLinks()
+    [Fact]
+    public void InvalidStatusCode_GetStatusCodeLink_ArgumentException()
     {
         // Arrange & Act
         var act = () => 666.GetStatusCodeLink();
@@ -68,8 +67,8 @@ public class StatusCodeLinksTests
             .Throw<ArgumentException>();
     }
 
-    [Fact(DisplayName = "Http status codes non-existent - Should return null")]
-    public void GetStatusCodeLinkOrDefault_NonExistent_Null()
+    [Fact]
+    public void NonExistentStatusCode_GetStatusCodeLinkOrDefault_Null()
     {
         // Arrange & Act
         var act = 666.GetStatusCodeLinkOrDefault();
@@ -80,8 +79,8 @@ public class StatusCodeLinksTests
             .BeNull();
     }
 
-    [Fact(DisplayName = "Http status codes existent - Should return the link")]
-    public void GetStatusCodeLinkOrDefault_Existent_Link()
+    [Fact]
+    public void ExistentStatusCode_GetStatusCodeLinkOrDefault_Link()
     {
         // Arrange & Act
         var act = 510.GetStatusCodeLinkOrDefault();
