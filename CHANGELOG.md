@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.2.0...v1.3.0) (2022-08-21)
+
+
+### Features
+
+* Add support to debug in runtime `Microsoft.SourceLink.GitHub` ([49a59ed](https://github.com/TechNobre/PowerUtils.Net.Primitives/commit/49a59edc3bf682fcea3a1138684a764737d162bd))
+
 ## [1.2.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.1.1...v1.2.0) (2022-03-02)
 
 
