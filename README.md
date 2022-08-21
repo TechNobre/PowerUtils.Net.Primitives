@@ -1,5 +1,8 @@
 # PowerUtils.Net.Primitives
-Provides additional types and constants for network-based libraries.
+
+![Logo](https://raw.githubusercontent.com/TechNobre/PowerUtils.Net.Primitives/main/assets/logo/logo_128x128.png)
+
+***Provides additional types and constants for network-based libraries***
 
 ![Tests](https://github.com/TechNobre/PowerUtils.Net.Primitives/actions/workflows/test-project.yml/badge.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.Net.Primitives&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.Net.Primitives)
@@ -10,25 +13,28 @@ Provides additional types and constants for network-based libraries.
 [![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.Net.Primitives.svg)](https://github.com/TechNobre/PowerUtils.Net.Primitives/blob/main/LICENSE)
 
 
-
-## Support to
-- .NET 3.1, .NET 5.0 and .NET 6.0
-
-
-
-## Features
-
-- [Installation](#Installation)
-- [Helpers](#Helpers)
-  - [ExtendedMediaTypeNames](#ExtendedMediaTypeNames)
-  - [StatusCodeLink](#StatusCodeLink)
+- [Support](#support-to)
+- [How to use](#how-to-use)
+  - [Install NuGet package](#Installation)
+  - [Helpers](#Helpers)
+    - [ExtendedMediaTypeNames](#ExtendedMediaTypeNames)
+    - [StatusCodeLink](#StatusCodeLink)
+- [Contribution](#contribution)
+- [License](./LICENSE)
+- [Changelog](./CHANGELOG.md)
 
 
-## Documentation
 
-### How to use
+## Support to <a name="support-to"></a>
+- .NET 6.0
+- .NET 5.0
+- .NET 3.1
 
-#### Install NuGet package <a name="Installation"></a>
+
+
+## How to use <a name="how-to-use"></a>
+
+### Install NuGet package <a name="Installation"></a>
 This package is available through Nuget Packages: https://www.nuget.org/packages/PowerUtils.Net.Primitives
 
 **Nuget**
@@ -44,6 +50,7 @@ dotnet add package PowerUtils.Net.Primitives
 
 
 ### Helpers <a name="Helpers"></a>
+
 #### ExtendedMediaTypeNames <a name="ExtendedMediaTypeNames"></a>
 - **Contains:** `ProblemApplication`
   - `ExtendedMediaTypeNames.ProblemApplication.JSON`;
@@ -99,20 +106,6 @@ dotnet add package PowerUtils.Net.Primitives
 
 
 
-## Contribution
+## Contribution <a name="contribution"></a>
 
-*Help me to help others*
-
-
-
-
-## LICENSE
-
-[MIT](https://github.com/TechNobre/PowerUtils.Net.Primitives/blob/main/LICENSE)
-
-
-
-
-## Changelog
-
-[Here](./CHANGELOG.md)
+If you have any questions, comments, or suggestions, please open an [issue](https://github.com/TechNobre/PowerUtils.Net.Primitives/issues/new/choose) or create a [pull request](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare)
