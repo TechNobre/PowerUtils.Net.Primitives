@@ -1,10 +1,4 @@
-# Changelog
-
-
-
-
-## [1.2.0] - 2022-03-02
-[Full Changelog](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.1.1...v1.2.0)
+## [1.2.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.1.1...v1.2.0) (2022-03-02)
 
 
 ### New Features
@@ -30,8 +24,7 @@
 
 
 
-## [1.1.1] - 2022-02-25
-[Full Changelog](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.1.0...v1.1.1)
+## [1.1.1](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.1.0...v1.1.1) (2022-02-25)
 
 
 ### Fixed
@@ -41,8 +34,7 @@
 
 
 
-## [1.1.0] - 2022-02-25
-[Full Changelog](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.0.0...v1.1.0)
+## [1.1.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.0.0...v1.1.0) (2022-02-25)
 
 
 ### New Features
@@ -57,6 +49,6 @@
 
 
 
-## [1.0.0] - 2021-11-21
+## 1.0.0 (2021-11-21)
 
 - Start project
