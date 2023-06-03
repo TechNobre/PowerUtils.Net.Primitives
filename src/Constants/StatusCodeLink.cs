@@ -64,7 +64,7 @@ namespace PowerUtils.Net.Constants
         /// </summary>
         /// <param name="statuCode">Http status code</param>
         /// <returns>Documentation link. If the status code does not exists return NULL</returns>
-        public static string GetStatusCodeLinkOrDefault(this int statuCode)
+        public static string? GetStatusCodeLinkOrDefault(this int statuCode)
             => statuCode switch
             {
                 // 4XX
