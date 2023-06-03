@@ -11,9 +11,10 @@ on:
 
 
 env:
-  SDK_VERSION_6: '6.0.400'
+  SDK_VERSION_7: '7.0.302'
+  SDK_VERSION_6: '6.0.402'
   SDK_VERSION_5: '5.0.408'
-  SDK_VERSION_3: '3.1.422'
+  SDK_VERSION_3: '3.1.426'
 
 
 jobs:
@@ -30,6 +31,7 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: |
+          ${{ env.SDK_VERSION_7 }}
           ${{ env.SDK_VERSION_6 }}
           ${{ env.SDK_VERSION_5 }}
           ${{ env.SDK_VERSION_3 }}

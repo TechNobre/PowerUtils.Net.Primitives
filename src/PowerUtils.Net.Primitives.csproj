@@ -6,7 +6,7 @@
 
     <!-- Assembly and projecto details -->
     <!-- https://docs.microsoft.com/en-us/dotnet/standard/frameworks -->
-    <TargetFrameworks>net6.0;net5.0;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net7.0;net6.0;net5.0;netcoreapp3.1</TargetFrameworks>
 
 
     <RootNamespace>PowerUtils.Net</RootNamespace>
@@ -32,7 +32,7 @@
     <License>MIT</License>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Copyright>Copyright © $(CurrentYear) by TechNobre</Copyright>
-    
+
     <Description>Provides additional types and constants for network-based libraries.</Description>
     <Summary>Provides additional types and constants for network-based libraries.</Summary>
     <PackageTags>PowerUtils;Utils;Net;Primitives;Types;Constants;Web</PackageTags>
