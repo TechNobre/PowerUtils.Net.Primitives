@@ -51,20 +51,24 @@ namespace PowerUtils.Net.Primitives.Tests.ConstantsTests
             // Arrange & Act
             var act = statusCode.GetStatusCodeLink();
 
+
             // Assert
-            act.Should()
-                .Be(statusCodeLink);
+            act.Should().Be(statusCodeLink);
         }
 
-        [Fact]
-        public void InvalidStatusCode_GetStatusCodeLink_ArgumentException()
+        [Theory]
+        [InlineData(666)]
+        [InlineData(7)]
+        [InlineData(99)]
+        public void InvalidStatusCode_GetStatusCodeLink_ArgumentException(int statuCode)
         {
             // Arrange & Act
-            var act = Record.Exception(() => 666.GetStatusCodeLink());
+            var act = Record.Exception(() => statuCode.GetStatusCodeLink());
+
 
             // Assert
-            act.Should()
-                .BeOfType<ArgumentException>();
+            act.Should().BeOfType<ArgumentException>();
+            act.Message.Should().Be($"Unknown status code: '{statuCode}'");
         }
 
         [Fact]
@@ -75,8 +79,7 @@ namespace PowerUtils.Net.Primitives.Tests.ConstantsTests
 
 
             // Assert
-            act.Should()
-                .BeNull();
+            act.Should().BeNull();
         }
 
         [Fact]
@@ -87,8 +90,7 @@ namespace PowerUtils.Net.Primitives.Tests.ConstantsTests
 
 
             // Assert
-            act.Should()
-                .NotBeNull();
+            act.Should().NotBeNull();
         }
     }
 }
