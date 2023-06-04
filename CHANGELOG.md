@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.3.0...v1.4.0) (2023-06-04)
+
+
+### Features
+
+* Added support for .NET7 ([2b9cf15](https://github.com/TechNobre/PowerUtils.Net.Primitives/commit/2b9cf15dd42276274d832fb632febba5015be9e0))
+
 # [1.3.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.2.0...v1.3.0) (2022-08-21)
 
 
