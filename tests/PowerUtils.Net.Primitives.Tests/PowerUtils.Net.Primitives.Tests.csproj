@@ -36,6 +36,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="JunitXml.TestLogger" Version="3.1.12" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" /> <!-- This direct installation is important to solve problem about vulnerable when this package is used has a transitive installation -->
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" /> <!-- This direct installation is important to solve problem about vulnerable when this package is used has a transitive installation -->
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' != 'netcoreapp3.1' And '$(TargetFramework)' != 'net5.0'">
