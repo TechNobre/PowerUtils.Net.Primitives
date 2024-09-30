@@ -17,19 +17,18 @@
 [![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.Net.Primitives.svg)](https://github.com/TechNobre/PowerUtils.Net.Primitives/blob/main/LICENSE)
 
 
-- [Support](#support-to)
-- [How to use](#how-to-use)
-  - [Install NuGet package](#Installation)
-  - [Helpers](#Helpers)
-    - [ExtendedMediaTypeNames](#ExtendedMediaTypeNames)
-    - [StatusCodeLink](#StatusCodeLink)
-- [Contribution](#contribution)
-- [License](./LICENSE)
-- [Changelog](./CHANGELOG.md)
+- [Support to ](#support-to-)
+- [How to use ](#how-to-use-)
+  - [Install NuGet package ](#install-nuget-package-)
+  - [Helpers ](#helpers-)
+    - [ExtendedMediaTypeNames ](#extendedmediatypenames-)
+    - [StatusCodeLink ](#statuscodelink-)
+- [Contribution ](#contribution-)
 
 
 
 ## Support to <a name="support-to"></a>
+- .NET 8.0
 - .NET 7.0
 - .NET 6.0
 - .NET 5.0
