@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.5.0...v1.6.0) (2024-11-18)
+
+
+### Features
+
+* Added support to .NET9 ([1dbf750](https://github.com/TechNobre/PowerUtils.Net.Primitives/commit/1dbf7500131811d700b45112f3c10b8fbf3cd22a))
+
 # [1.5.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.4.0...v1.5.0) (2024-09-30)
 
 
