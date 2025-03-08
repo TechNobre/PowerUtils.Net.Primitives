@@ -23,7 +23,7 @@ env:
   PROJECT_FILE: 'PowerUtils.Net.Primitives.csproj'
   TEST_PROJECT_PATH: 'tests/PowerUtils.Net.Primitives.Tests/PowerUtils.Net.Primitives.Tests.csproj'
 
-  # Setup the .NET environment to improved test performance and reliability
+  # Set up the .NET environment to improve test performance and reliability
   DOTNET_CLI_TELEMETRY_OPTOUT: true # Disable .NET CLI telemetry
   DOTNET_NOLOGO: true # Disable .NET CLI logo
   DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION: true # Enable ANSI color redirection
