@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.6.0...v2.0.0) (2025-08-30)
+
+
+### Bug Fixes
+
+* Marked all implementations as `Obsolete` ([76c3d64](https://github.com/TechNobre/PowerUtils.Net.Primitives/commit/76c3d644364d144c77384708339ab97a0cd45aa0))
+
+
+### BREAKING CHANGES
+
+* Deprecated package
+
 # [1.6.0](https://github.com/TechNobre/PowerUtils.Net.Primitives/compare/v1.5.0...v1.6.0) (2024-11-18)
 
 
